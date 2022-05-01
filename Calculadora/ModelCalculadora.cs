@@ -40,6 +40,33 @@ namespace Calculadora
             }
             return num1 / num2;
         }//Fim do método Dividir
+        
+        public double Potenciacao (double bas, double expoente)
+        {
+            if (expoente == 0)
+            {
+                return 1;
+            }else if (expoente ==1)
+            {
+                return bas;
+            }
+            else
+            {
+                return Math.Pow(bas, expoente);
+            }
+        }//Fim do método Potenciacão
+
+        public double Raiz(double num1)
+        {
+            if (num1 < 0)
+            {
+                return -1;
+            }
+            else
+            {
+                return Math.Sqrt(num1);
+            }
+        }//Fim do método Raiz
 
         
 
